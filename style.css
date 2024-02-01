@@ -33,6 +33,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-inline-size: 100%;
+}
+
 #humberger{
     display: none;
 }
@@ -177,43 +181,19 @@ section{
 
 /*  */
 @media (max-width: 425px) {
-    /* header */
-    #info{
-        display: none;
-    }
-
-    #humberger{
-        width: 40px;
-        padding: 6px;
-        cursor: pointer;
-        display: flex;
-        gap: 6px;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
-    #humberger span{
-        width: 100%;
-        height: 3px;
-        border-radius: 3px;
-        background: #fff;
-    }
-
-    #humberger span:first-child{width: 65%;}
-    #humberger span:last-child{width: 40%;}
-
     main{
         position: relative;
         grid-template-columns: 1fr;
     }
+
+    section{border: none;}
 
     aside{
         transition: all .5s linear;
         background: #242429;
         border-radius: 15px 15px 10px 10px;
         width: 100%;
-        height: 50%;
+        height: 70%;
 
         transform-origin: right bottom;
         transform: scale(0);
@@ -256,5 +236,20 @@ section{
 @media (min-width: 426px) and (max-width: 1000px) {
     main{
         grid-template-columns: auto 230px;
+    }
+
+    #projects::after{
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .project{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .project .card::after{
+        left: 0 !important;
+        border-radius: 0 0 0 2px !important;
     }
 }
