@@ -77,11 +77,12 @@ header{
 main{
     display: grid;
     gap: 25px;
-    grid-template-columns: auto 425px;
+    grid-template-columns: auto 370px;
 }
 
 /*  */
 section{
+    position: relative;
     border-radius: 5px;
     border: 1px solid #444;
 }
@@ -93,23 +94,6 @@ section{
     position: relative;
 }
 
-#projects::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    background-color: #208a00;
-    transform: translateX(-50%);
-}
-
-.project{
-    display: grid;
-    perspective: 1000px;
-    grid-template-columns: 1fr 1fr;
-}
-
 .project .card{
     user-select: none;
     margin: 40px 23px;
@@ -118,30 +102,19 @@ section{
     border-radius: 7px;
     pointer-events: none;
     background-color: #540880;
-    filter: drop-shadow(-6px 7px #000);
+    filter: drop-shadow(7px 7px #000);
     gap: 5px;
     opacity: .2;
     display: flex;
     flex-flow: column nowrap;
     transition: all 1s cubic-bezier(0.37, 0.94, 0.48, 1.51);
-}
-
-.project:nth-child(odd) .card{
-    grid-column: 2/3;
     transform: translateY(-30px) rotateY(45deg);
 }
-.project:nth-child(odd) .card:active{
-    transition-duration: .3s;
-    transform: translateY(0) rotateY(-40deg) !important;
-}
 
-.project:nth-child(even) .card{
-    grid-column: 1/2;
-    transform: translateY(-30px) rotateY(-40deg);
-}
-.project:nth-child(even) .card:active{
+.project.visible .card:active{
     transition-duration: .3s;
-    transform: translateY(0) rotateY(40deg) !important;
+    transform-origin: bottom left;
+    transform: translateY(0) rotateZ(-3deg) !important;
 }
 
 .project.visible .card{
@@ -151,23 +124,8 @@ section{
     transform: translateY(0) rotateY(0) !important;
 }
 
-.card::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    width: 20px;
-    height: 20px;
-    background-color: inherit;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-.project:nth-child(odd) .card::after{
-    left: 0;
-    border-radius: 0 0 0 2px;
-}
-.project:nth-child(even) .card::after{
-    left: 100%;
-    border-radius: 0 2px 0 0;
+.card img{
+    border-radius: inherit;
 }
 
 /* .project:not(.visible) .card{
@@ -233,7 +191,7 @@ section{
     }
 }
 
-@media (min-width: 426px) and (max-width: 1000px) {
+/* @media (min-width: 426px) and (max-width: 1000px) {
     main{
         grid-template-columns: auto 230px;
     }
@@ -252,4 +210,17 @@ section{
         left: 0 !important;
         border-radius: 0 0 0 2px !important;
     }
+} */
+
+.msg-11{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    opacity: 0.3;
+    user-select: none;
 }
