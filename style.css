@@ -111,7 +111,7 @@ section{
     transform: translateY(-30px) rotateY(45deg);
 }
 
-.project.visible .card:active{
+.project.visible .card:hover{
     transition-duration: .3s;
     transform-origin: bottom left;
     transform: translateY(0) rotateZ(-3deg) !important;
