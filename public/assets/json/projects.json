@@ -1,44 +1,44 @@
 [
-	{
-		"title": "share.lc",
-		"description": "Web app that allows sharing any type of file through a local network (WiFi, hotspot, etc).",
-		"thumbnail": "/assets/img/thumb-share.lc.png",
-		"preview": "/#/404",
-		"code": "https://github.com/tarunregmi/share.lc"
-	},
-	{
-		"title": "lagani",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quaerat commodi dolorem blanditiis tempora corrupti iste facere impedit omnis. Iusto dolores.",
-		"thumbnail": "/assets/img/thumb-lagani.png",
-		"preview": "/#/404",
-		"code": "/#/404"
-	},
-	{
-		"title": "Password Generator",
-		"description": "Random password generator using html css and javascript.",
-		"thumbnail": "/assets/img/thumb-rpg.png",
-		"preview": "https://tarunregmi.com.np/projects/random-password-generator/",
-		"code": "https://github.com/tarunregmi/password-generator"
-	},
-	{
-		"title": "Base64 Image Encoder",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus itaque fugiat assumenda reiciendis, reprehenderit delectus facilis neque qui officiis illo, ipsam.",
-		"thumbnail": "/assets/img/thumb-bie.png",
-		"preview": "/#/404",
-		"code": "/#/404"
-	},
-	{
-		"title": "Stopwatch (CSS Only)",
-		"description": "Fully functional stopwatch using only css.",
-		"thumbnail": "/assets/img/thumb-csw.png",
-		"preview": "https://tarunregmi.com.np/projects/stopwatch/",
-		"code": "https://github.com/tarunregmi/stopwatch"
-	},
-	{
-		"title": "Portfolio Website",
-		"description": "My portfolio website.",
-		"thumbnail": "/assets/img/thumb.png",
-		"preview": "/",
-		"code": "https://github.com/tarunregmi/tarunregmi.github.io"
-	}
+  {
+    "title": "SUB-IOST",
+    "description": "A software that sends real-time TU (IOST) updates and notifications directly to your email.",
+    "thumbnail": "/assets/img/thumb-sub-iost.png",
+    "preview": "https://notify-me.net/",
+    "code": "https://github.com/tarunregmi/sub-iost"
+  },
+  {
+    "title": "QRdine",
+    "description": "A full-stack web app representing a digital menu and ordering system for hotels/restaurants.",
+    "thumbnail": "/assets/img/thumb-qrdine.png",
+    "preview": "https://youtu.be/Xvbz-NCsAOQ",
+    "code": "https://github.com/tarunregmi/qrdine"
+  },
+  {
+    "title": "share.lc",
+    "description": "Web app that allows sharing any type of file through a local network (WiFi, hotspot, etc).",
+    "thumbnail": "/assets/img/thumb-share.lc.png",
+    "preview": "/#/404",
+    "code": "https://github.com/tarunregmi/share.lc"
+  },
+  {
+    "title": "Password Generator",
+    "description": "Random password generator using html css and javascript.",
+    "thumbnail": "/assets/img/thumb-rpg.png",
+    "preview": "https://tarunregmi.com.np/projects/random-password-generator/",
+    "code": "https://github.com/tarunregmi/password-generator"
+  },
+  {
+    "title": "Stopwatch (CSS Only)",
+    "description": "Fully functional stopwatch using only css.",
+    "thumbnail": "/assets/img/thumb-csw.png",
+    "preview": "https://tarunregmi.com.np/projects/stopwatch/",
+    "code": "https://github.com/tarunregmi/stopwatch"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "My portfolio website.",
+    "thumbnail": "/assets/img/thumb.png",
+    "preview": "/",
+    "code": "https://github.com/tarunregmi/tarunregmi.github.io"
+  }
 ]
