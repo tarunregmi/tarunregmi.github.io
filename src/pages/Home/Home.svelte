@@ -8,7 +8,7 @@
 		<div>
 			<h4 class="hello">HELLO</h4>
 			<h1 class="intro">I'm <span class="mark">Tarun Regmi</span></h1>
-			<p>A motivated and aspiring Software Engineer{#if true}ing student{/if} with a strong foundation in coding, problem-solving, and team collaboration.</p>
+			<p>Backend-focused full-stack engineer with 2+ years building production systems. Experienced across the stack with deep expertise in scalable backend architecture.</p>
 			<button class="button"><a href="#download">DOWNLOAD CV</a></button>
 		</div>
 	</div>
