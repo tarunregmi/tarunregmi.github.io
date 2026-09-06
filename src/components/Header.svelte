@@ -10,7 +10,7 @@
 
 <header class="width-full row">
 	<img class="icon" src="{logo}" alt="TR"/>
-	<button class="icon cross" on:click={toggleNavigations}>
+	<button class="icon cross" aria-label="Toggle navigation" on:click={toggleNavigations}>
 		<span></span>
 	</button>
 	<div class="navigations">
