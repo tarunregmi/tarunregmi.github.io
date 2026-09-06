@@ -1,6 +1,5 @@
 <script>
-	// import Card from "./Card.svelte";
-	import Card1 from "./Card1.svelte";
+	import Card from "./Card.svelte";
 
 	async function getProjects() {
 		const response = await fetch("/assets/json/projects.json");
@@ -13,7 +12,7 @@
 	{#await getProjects()}
 		loading ...
 	{:then projects}
-		{#each projects as project}<Card1 object={project} />{/each}
+		{#each projects as project}<Card object={project} />{/each}
 	{:catch}
 		<p>Error during loading projects!</p>
 	{/await}

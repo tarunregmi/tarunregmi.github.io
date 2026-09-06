@@ -1,16 +1,20 @@
 <script>
-	export let project;
+	export let object = {};
 </script>
 
 <div class="card">
-	<img class="thumbnail" src="{project.thumbnail}" alt="Thumbnail" />
-	<div class="card-content">
-		<h2>{project.title}</h2>
-		<p>{project.description}</p>
-		<div>
-			<button class="button">Preview</button>
+	<div class="thumbnail">
+		<img src="{object.thumbnail}" alt="Thumbnail">
+	</div>
+	<div class="card-body">
+		<div class="card-content">
+			<h3>{object.title}</h3>
+			<p>{object.description}</p>
+		</div>
+		<div class="card-actions">
+			<button class="button"><a href="{object.preview}" target="_blank">Preview</a></button>
 			<button class="button">
-				<a href="{project.code}" target="_blank">Source Code</a>
+				<a href="{object.code}" target="_blank">Source Code</a>
 			</button>
 		</div>
 	</div>
@@ -18,36 +22,58 @@
 
 <style>
 .card{
-	border: 1px solid;
-	display: flex;
-	flex-flow: column nowrap;
-	min-width: 320px;
-	max-width: 1000px;
+	width: 95%;
 	border-radius: 10px;
 	overflow: hidden;
+	background: rgb(15, 25, 36);
+	border: 1px solid #1F262E;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
-.thumbnail{
-	height: 200px;
-	object-fit: cover;
-	object-position: center;
+img{
+	width: 100%;
+	display: block;
 }
 
-.button{
-	margin-top: 20px;
-}
 
-button:disabled{
-	cursor: not-allowed;
-}
-
-.card-content{
+.card-body{
 	padding: 10px;
 }
 
-@media (min-width: 768px) {
+h3{
+	font-weight: 500;
+}
+
+p{
+	color: rgb(255 255 255 / 0.7);
+}
+
+.card-actions{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 40px;
+}
+
+@media (min-width: 550px) and (max-width: 769px) {
 	.card{
+		width: 95%;
 		flex-flow: row nowrap;
+	}
+
+	.thumbnail{
+		width: 50%;
+	}
+
+	.card-body{
+		width: 50%;
+	}
+}
+
+@media (min-width: 769px) {
+	.card{
+		width: 40%;
 	}
 }
 </style>
