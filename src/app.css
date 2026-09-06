@@ -269,6 +269,12 @@ main{
 		-webkit-backdrop-filter: none;
 	}
 
+	.navigations,
+	.navigations .routes span,
+	.navigations .sep,
+	.navigations .socials
+	{animation: unset !important;}
+
 	.routes{
 		flex-flow: row nowrap;
 		gap: 2.5vw;
