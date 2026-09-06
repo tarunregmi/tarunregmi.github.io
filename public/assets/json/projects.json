@@ -21,20 +21,6 @@
     "code": "https://github.com/tarunregmi/share.lc"
   },
   {
-    "title": "Password Generator",
-    "description": "Random password generator using html css and javascript.",
-    "thumbnail": "/assets/img/thumb-rpg.png",
-    "preview": "https://tarunregmi.com.np/projects/random-password-generator/",
-    "code": "https://github.com/tarunregmi/password-generator"
-  },
-  {
-    "title": "Stopwatch (CSS Only)",
-    "description": "Fully functional stopwatch using only css.",
-    "thumbnail": "/assets/img/thumb-csw.png",
-    "preview": "https://tarunregmi.com.np/projects/stopwatch/",
-    "code": "https://github.com/tarunregmi/stopwatch"
-  },
-  {
     "title": "Portfolio Website",
     "description": "My portfolio website.",
     "thumbnail": "/assets/img/thumb.png",
